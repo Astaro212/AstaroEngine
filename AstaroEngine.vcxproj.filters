@@ -52,7 +52,6 @@
     <ClInclude Include="src\Systems\System.h" />
     <ClInclude Include="src\Utils\Helper.h" />
     <ClInclude Include="src\main.h" />
-    <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\background.jpg">
@@ -95,15 +94,11 @@
     <ClCompile Include="src\main.cpp">
       <Filter>engine</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="RCa10052" />
     <None Include="README.md" />
     <None Include="vcpkg.json" />
     <None Include="vcpkg-configuration.json" />
