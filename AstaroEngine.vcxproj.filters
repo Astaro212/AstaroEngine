@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="engine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="engine\core">
+      <UniqueIdentifier>{11e63b31-0486-49e7-8429-e4e194bc0f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="engine\systems">
+      <UniqueIdentifier>{60cb8a1c-3f6f-405d-95a5-dd4966f4204e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images">
+      <UniqueIdentifier>{1a7b0a3b-f1a5-4971-ba07-5895a0ae5fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\components">
+      <UniqueIdentifier>{01a9acd4-e52f-4217-9e78-c978e95cd05f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\components\GUI">
+      <UniqueIdentifier>{baf4799b-e05a-4fbc-bc14-b7cd998f2c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\systems\input">
+      <UniqueIdentifier>{7c727909-87cb-444d-9dba-d3769d1ca7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\systems\camera">
+      <UniqueIdentifier>{fe623558-8bfb-4da6-8f12-f114d1a38001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\controllers">
+      <UniqueIdentifier>{86c2120e-d94d-4bd8-9e1c-0dc7a6542a5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Controllers\ActionController.h" />
+    <ClInclude Include="src\Managers\ComponentManager.h" />
+    <ClInclude Include="src\Managers\EntityManager.h" />
+    <ClInclude Include="src\Managers\SystemManager.h" />
+    <ClInclude Include="src\Managers\Transform.h" />
+    <ClInclude Include="src\Render\DX12\DX12Core.h" />
+    <ClInclude Include="src\Render\GUI\GuiComponents.h" />
+    <ClInclude Include="src\Render\Physics\PhysicsSystem.h" />
+    <ClInclude Include="src\Render\Textures\TextureLoader.h" />
+    <ClInclude Include="src\Render\RenderSystem.h" />
+    <ClInclude Include="src\Render\Window.h" />
+    <ClInclude Include="src\Systems\Camera\CameraSystem.h" />
+    <ClInclude Include="src\Systems\Input\InputSystem.h" />
+    <ClInclude Include="src\Systems\System.h" />
+    <ClInclude Include="src\Utils\Helper.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\background.jpg">
+      <Filter>assets\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AstaroEngine.rc">
+      <Filter>assets</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Controllers\ActionController.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\DX12\DX12Core.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\GUI\GuiComponents.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Physics\PhysicsSystem.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Textures\TextureLoader.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\RenderSystem.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Window.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Systems\Camera\CameraSystem.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Systems\Input\InputSystem.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RCa10052" />
+    <None Include="README.md" />
+    <None Include="vcpkg.json" />
+    <None Include="vcpkg-configuration.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
